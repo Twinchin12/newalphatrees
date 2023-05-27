@@ -344,6 +344,14 @@ on post-fs-data
     copy /vendor/etc/qcril_database/qcrilNr.db /data/vendor/radio/qcrilNr_prebuilt.db
     chown radio radio /data/vendor/radio/qcrilNr_prebuilt.db
     chmod 0660 /data/vendor/radio/qcrilNr_prebuilt.db
+    
+    # Enable touchpanel's offscreen gestures
+    chown system system /proc/touchpanel/aosp_gesture_enable
+    write /proc/touchpanel/aosp_gesture_enable 1
+
+    # DT2W
+    chown system system /proc/touchpanel/aosp_double_tap_enable
+    write /proc/touchpanel/aosp_double_tap_enable 1
 
     # File flags for prebuilt ril db file
     write /data/vendor/radio/prebuilt_db_support 1
