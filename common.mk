@@ -160,6 +160,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/display/display_id_4630946950956839809.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946950956839809.xml
 
+# Dex preopt
+PRODUCT_DEXPREOPT_SPEED_APPS += \
+    Settings \
+    SystemUIGoogle \
+    NexusLauncherRelease
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor \
