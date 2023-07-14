@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_instantnoodlep.mk
+    $(LOCAL_DIR)/lineage_instantnoodlep.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_instantnoodlep-user \
-    evolution_instantnoodlep-userdebug \
-    evolution_instantnoodlep-eng
+    lineage_instantnoodlep-user \
+    lineage_instantnoodlep-userdebug \
+    lineage_instantnoodlep-eng
