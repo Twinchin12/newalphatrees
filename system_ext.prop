@@ -11,6 +11,9 @@ persist.bluetooth.bqr.min_interval_ms=60000
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=0
 
+# Feature flags
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
+
 # CNE
 persist.vendor.cne.feature=1
 
